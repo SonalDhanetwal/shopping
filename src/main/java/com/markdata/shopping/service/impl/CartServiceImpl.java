@@ -12,19 +12,20 @@ import java.util.List;
 
 @Service
 public class CartServiceImpl implements CartService {
-    @Autowired
+    /*@Autowired
     CartRepository cartRepository;
-
+*/
     @Override
     public List<Item> getAllItems() {
-        List items = new ArrayList<>();
+        /*List items = new ArrayList<>();
         cartRepository.findAll().forEach(items::add);
-        return items;
+        return items;*/
+        return itemStore();
     }
 
     @Override
     public void storeItem(Item item) {
-        cartRepository.save(item);
+        //cartRepository.save(item);
     }
 
     private List<Item> itemStore(){

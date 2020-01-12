@@ -28,10 +28,10 @@ public class CartControllerImpl implements CartController {
     @Override
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = {"application/json"})
     public void storeItem() {
-        Item item = new Item();
+        /*Item item = new Item();
         item.setName("tide");
         item.setPrice(90.09);
-        cartService.storeItem(item);
+        cartService.storeItem(item);*/
     }
 
     @RequestMapping("/getmessage")

@@ -3,20 +3,9 @@ package com.markdata.shopping.model.vo;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
 public class Item {
-    @Id
-    String id;
     String name;
     double price;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
